@@ -1,0 +1,95 @@
+{% extends "user-base.html" %}
+{% block title%}
+<title>Befit : My Food</title>
+{% endblock%}
+{% block body%}
+<section id="myfood">
+   <div id="add-container" class="add-container">
+      <h1>Add Meal/Food</h1>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for msg in messages%}
+      {% if msg == "Meal deleted!" or msg == "Food entries has been successfully reset!" %} 
+      <div id="notifications-div"  style="background-color: orange; margin-top: 0; margin-bottom: 0;">
+         <li style="color: white;list-style: none; padding-left: 10px; font-weight: 500; text-align: left;">
+            <i class="fas fa-check" style="padding-right: 5px"></i>
+            {{msg}}
+         </li>
+      </div>
+      {% else %}  
+      <div id="notifications-div"  style="background-color: rgb(0, 177, 0); margin-top: 0; margin-bottom: 0;">
+         <li style="color: white;list-style: none; padding-left: 10px; font-weight: 500; text-align: left;">
+            <i class="fas fa-check" style="padding-right: 5px"></i>
+            {{msg}}
+         </li>
+      </div>
+      {% endif %}     
+      {% endfor%}
+      {% endif %}
+      {% endwith%}
+      <form id="form-add-meal" action="/myfood" method="POST">
+         <select name="meal" id="meal" required="required">
+            <option selected="selected" value="" disabled>Meal</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="snack">Snack</option>
+         </select>
+         <input type="text" name="food" class="foody" placeholder="Food" required>
+         <span >
+         <input type="number" name="calories" class="four" placeholder="Calories" required>
+         <input type="number" name="proteins" class="four" placeholder="Proteins" required>
+         <input type="number" name="carbs" class="four" placeholder="Carbs" required>
+         <input type="number" name="fats" class="four" placeholder="Fats" required>
+         </span>
+         <input type="submit" value="ADD MEAL" id="add-submit" style="border: solid rgb(0, 0, 0) 2px;">
+      </form>
+   </div>
+   <div id="table-container" class="add-container">
+      <h2>Food entries</h2>
+      <table>
+         <tr>
+            <th >Meal</th>
+            <th>Food</th>
+            <th style="width:130px;" class="cntr">Calories</th>
+            <th style="width: 100px;" class="cntr">Proteins</th>
+            <th style="width: 100px;" class="cntr">Carbs</th>
+            <th style="width: 100px;" class="cntr">Fats</th>
+            <th style="width: 50px;" class="cntr"></th>
+         </tr>
+         {%for row in rows%}
+         <tr>
+            <td>{{row["meal"]}}</td>
+            <td>{{row["food"]}}</td>
+            <td class="cntr">{{row["calories"]}}</td>
+            <td class="cntr">{{row["proteins"]}}</td>
+            <td class="cntr">{{row["carbs"]}}</td>
+            <td class="cntr">{{row["fats"]}}</td>
+            <td class="cntr">
+               <form action="{{url_for('delete_entry', id=row["meal_id"])}}" method="POST">
+               <input type="hidden" name="_method" value="DELETE">
+               <button type="submit" style="border: none; background-color: transparent; outline: none; cursor: pointer;"><i class="fas fa-times"></i></button>
+               </form>
+            </td>
+         </tr>
+         {%endfor%}
+         {%for i in range(5 - row_len)%}
+         <tr>
+            <td></td>
+            <td></td>
+            <td class="cntr"></td>
+            <td class="cntr"></td>
+            <td class="cntr"></td>
+            <td class="cntr"></td>
+            <td class="cntr"></td>
+         </tr>
+         {%endfor%}
+      </table>
+      <form action="{{url_for('reset', id=s_id)}}" method="POST">
+         <input type="hidden" name="_method" value="DELETE">
+         <input type="submit" value="RESET" id="reset" style="border: solid rgb(0, 0, 0) 2px;">
+      </form>
+   </div>
+   </div>
+</section>
+{% endblock%}

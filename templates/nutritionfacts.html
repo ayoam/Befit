@@ -1,0 +1,24 @@
+{% extends "user-base.html" %}
+{% block title%}
+<title>Befit : Nutrition Facts</title>
+{% endblock%}
+{% block body%}
+<section id="nutritionfacts">
+   <div id="searchbar">
+      <h1>Search Food Nutrition Facts</h1>
+      <p>Find nutrition facts for your favorite food</p>
+      <form>
+         <input type="text" id="search-input" name="search-input" placeholder="Enter a food or brand name">
+         <button type="submit" id="s-b-s-btn">SEARCH</button>
+      </form>
+   </div>
+   <div id="nut-results">
+   </div>
+   <div id="loader">
+      <img src="../static/images/Pulse-1s-200px.gif">
+   </div>
+</section>
+{% endblock%}
+{%block script%}
+<script rel="text/javascript" src="../static/js/fetch.js"></script>
+{%endblock%}

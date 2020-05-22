@@ -1,0 +1,32 @@
+{% extends "home-base.html" %}
+{% block title%}
+<title>Befit : login</title>
+{% endblock%}
+{% block body%}
+<section id="login-page">
+   <div id="login-form">
+      <h1>Login</h1>
+      <p id="wlcm">Welcome back , log in to your account .</p>
+      <div id="empty">
+         {% with messages = get_flashed_messages() %}
+         {% if messages %}
+         {% for msg in messages%}
+         <p id="error">{{msg}}</p>
+         {% endfor%}
+         {% endif %}
+         {% endwith%}
+      </div>
+      <form action="/login" method="POST">
+         <input type="text" id="l-f-name" name="username" placeholder="Username">
+         <input type="password" id="l-f-password" name="password" placeholder="Password">
+         <input type="submit" id="l-f-submit" value="SIGN IN" >
+      </form>
+      <p id="forgot"><a href="/contact-us" >Forgot Your Password?</a></p>
+      <p id="s-up">Don't have an account? <a href="/signup">Sign up</a></p>
+   </div>
+   <div id="ln-image">
+      <!-- <img src="../static/images/BEFIT-VECTOR.svg"> -->
+      <img src="../static/images/imageedit_1_4590574081.png">
+   </div>
+</section>
+{% endblock%}

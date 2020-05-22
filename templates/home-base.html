@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      {% block title%}
+      {% endblock%}
+      <link rel="icon" href="../static/images/favicon.png" type="image/png" sizes="16x16">
+      <script src="https://kit.fontawesome.com/ebde7b45ee.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="../static/css/style.css">
+   </head>
+   <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <section id="navbar" class="fixed" style="position: fixed;">
+         <div id="img-cont"><a href="/"><img src="../static/images/BEFIT.png"></a></div>
+         <ul>
+            <a href="/about">
+               <li>About</li>
+            </a>
+            <a href="/">
+               <li>Features</li>
+            </a>
+            <a href="/">
+               <li>Victory Stories</li>
+            </a>
+            <a href="/contact-us">
+               <li>Contact us</li>
+            </a>
+         </ul>
+         <span>
+            <a href="/login">
+               <li class="span1">Login</li>
+            </a>
+            <a href="/signup" id="signup-btn">
+               <li class="span1">Sign up</li>
+            </a>
+         </span>
+      </section>
+      {% block body%}
+      {% endblock%}
+      <footer>
+         <div class="p1">
+            <ul>
+               <a href="#">
+                  <li>About us</li>
+               </a>
+               <a href="#">
+                  <li>Terms</li>
+               </a>
+               <a href="#">
+                  <li>Privacy</li>
+               </a>
+               <a href="#">
+                  <li>Contact us</li>
+               </a>
+               <a href="#">
+                  <li>Careers</li>
+               </a>
+               <a href="#">
+                  <li>Feedback</li>
+               </a>
+            </ul>
+         </div>
+         <p style="color: white; text-align: center; font-weight: 600;">stay connected :</p>
+         <div class="p2">
+            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+            <a href="#" ><i class="fab fa-twitter-square fa-3x"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square fa-3x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="#" ><i class="fab fa-youtube-square fa-3x"></i></a>
+            <a href="#"><i class="fab fa-instagram-square fa-3x"></i></a>
+         </div>
+         <div class="p3">
+            <p>Copyright © 2020 Befit.  All rights reserved</p>
+         </div>
+      </footer>
+      {%block script%}
+      {%endblock%}
+   </body>
+</html>

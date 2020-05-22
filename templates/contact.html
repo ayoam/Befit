@@ -1,0 +1,28 @@
+{% extends "home-base.html" %}
+{% block title%}
+<title>Befit : contact us</title>
+{% endblock%}
+{% block body%}
+<section id="contact">
+   <div id="map">
+      <img src="https://images8.alphacoders.com/984/thumb-1920-984891.jpg">
+   </div>
+   <div id="contact-form">
+      <h1>Contact Us</h1>
+      <p>You may contact us by filling in this form any time you need professional support or have any questions. You can also fill in the form to leave your comments or feedback.</p>
+      <form action="/contact-us" method="POST">
+         <input type="text" id="c-f-name" name="name" placeholder="Enter your full name here" required>
+         <input type="email" id="c-f-email" name="email" placeholder="Enter your email here"  required>
+         <textarea name="message" id="c-f-message" placeholder="Enter your message here" required></textarea>
+         <input type="submit" id="c-f-submit" value="submit">
+      </form>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for msg in messages%}
+      <p style="margin-top: 10px; color: green;">{{msg}}</p>
+      {% endfor%}
+      {% endif %}
+      {% endwith%}
+   </div>
+</section>
+{% endblock%}

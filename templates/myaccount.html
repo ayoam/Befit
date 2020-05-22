@@ -1,0 +1,48 @@
+{% extends "user-base.html" %}
+{% block title%}
+<title>BEFIT : Account Settings</title>
+{% endblock%}
+{% block body%}
+<section id="myaccount">
+   <div id="settings" class="cardy">
+      <h1>Account Settings</h1>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for msg in messages%}
+      {% if msg == "changes saved!" %}
+      <div id="notifications-div" style="background-color: rgb(0, 177, 0);">
+         <li style="color: white;list-style: none; padding-left: 10px; font-weight: 500;">
+            <i class="fas fa-check" style="padding-right: 5px"></i>
+            {{msg}}
+         </li>
+      </div>
+      {% else %}
+      <div id="notifications-div" style="background-color: orange;">
+         <li style="color: white;list-style: none; padding-left: 10px; font-weight: 500;">
+            <i class="fas fa-times" style="padding-right: 5px"></i>
+            {{msg}}
+         </li>
+      </div>
+      {% endif %}         
+      {% endfor%} 
+      {% endif %}
+      {% endwith%}
+      <form action="/myaccount" method="POST">
+         <label for="username">Username</label>
+         <input type="text" name="username" value={{username}} class="input-settings" disabled>
+         <label for="email">Email Address</label>
+         <input type="email" name="email" value={{email}} class="input-settings"disabled>
+         <label for="newpassword">New Password</label>
+         <input type="password" name="newpassword" id="newpassword" placeholder="Enter your new password" class="input-settings">
+         <label for="newpassword2">Confirm Password</label>
+         <input type="password" name="newpassword2" id="newpassword2" placeholder="Confirm your new password" class="input-settings">
+         <label for="newpassword2">Change Current Weight (KG)</label>
+         <input type="number" name="newweight" value={{c_weight}} class="input-settings" required>
+         <input type="submit" name="submit" id="submit-set" value="SAVE CHANGES">
+      </form>
+   </div>
+</section>
+{% endblock%}
+{%block script%}
+<script rel="text/javascript" src="../static/js/app2.js"></script>
+{%endblock%}

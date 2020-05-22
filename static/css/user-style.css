@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100vh;
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+
+/* NAVBAR SECTION  */
+
+#navbar {
+	width: 100%;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	flex-direction: column;
+}
+
+#navbar ul {
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+#navbar ul a li {
+	color: rgb(255, 255, 255);
+	list-style: none;
+	display: inline;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 20px;
+	font-weight: 600;
+	border: 2px solid transparent;
+	padding: 2px 15px;
+}
+
+#img-cont {
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 24px;
+}
+
+#img-cont img {
+	display: block;
+	width: 120px;
+	margin: 0 auto;
+}
+
+#navbar ul a li:hover:not(.span1) {
+	border: solid #fff 2px;
+}
+
+#sp2 {
+	position: absolute;
+	right: 20px;
+}
+
+#sp3 {
+	position: absolute;
+	left: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.fa-circle {
+	font-size: 50px;
+}
+
+
+/* FOOTER */
+
+footer {
+	background-color: black;
+	height: 210px;
+}
+
+.p1 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+}
+
+.p1 ul {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-right: 20px;
+	width: 60%;
+	padding: 20px 0;
+}
+
+.p1 ul li {
+	list-style: none;
+	font-size: 20px;
+	font-weight: 600;
+	padding-right: 15px;
+	padding-left: 15px;
+	color: white;
+}
+
+.p2 {
+	text-align: center;
+	font-size: 10px;
+}
+
+.p3 {
+	text-align: center;
+	color: white;
+}
+
+.p2 a {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.p2 {
+	padding: 20px 0;
+	color: white;
+}
+
+.p {
+	padding: 20px 0;
+}
+
+
+/* DASHBOARD */
+
+#dashboard {
+	min-height: 800px;
+}
+
+#all-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	padding: 40px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.card-container {
+	background-color: rgb(255, 255, 255);
+	height: 200px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+}
+
+#col1,
+#col2,
+#col3,
+#col4,
+#col6,
+.col9 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-container p {
+	font-size: 22px;
+}
+
+.card-container h3 {
+	font-size: 40px;
+}
+
+#col5 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 0;
+	grid-row-end: 0;
+}
+
+#col7 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 0;
+	grid-row-end: 0;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+#col8 {
+	height: 400px;
+}
+
+#col5,
+#col6 {
+	height: 300px;
+}
+
+table {
+	font-family: 'Titillium Web', sans-serif;
+	border-collapse: collapse;
+	width: 95%;
+	margin: 20px auto;
+	height: auto;
+}
+
+#tb1 {
+	Overflow-y: scroll;
+}
+
+td,
+th {
+	text-align: left;
+	padding: 8px;
+	font-size: 16px;
+	height: 50px;
+}
+
+tr:nth-child(even) {
+	background-color: #f3f3f3;
+}
+
+.cntr {
+	text-align: center;
+}
+
+td {
+	font-weight: 600;
+}
+
+th {
+	font-weight: 600;
+	color: rgb(160, 160, 160);
+}
+
+#col7 h2 {
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#col5 h2 {
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#col8 {
+	display: grid;
+	height: 100%;
+	grid-gap: 20px;
+}
+
+.col9 {
+	height: 190px;
+}
+
+#col5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.tips {
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+	position: relative;
+	cursor: pointer;
+}
+
+.fitness img {
+	width: 230%;
+	position: absolute;
+	left: -190px;
+}
+
+.overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay:after {
+	content: '';
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.recipes img {
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	width: 120%;
+	position: absolute;
+	left: -10px;
+}
+
+.nfacts img {
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	width: 200%;
+	position: absolute;
+	left: -10px;
+}
+
+.nfacts h3 {
+	z-index: 900;
+	position: absolute;
+	top: 30%;
+	left: 22%;
+	color: white;
+	text-align: center;
+	line-height: 48px;
+}
+
+.recipes h3 {
+	z-index: 900;
+	position: absolute;
+	top: 30%;
+	left: 29%;
+	color: white;
+	text-align: center;
+	line-height: 48px;
+}
+
+.fitness h3 {
+	z-index: 900;
+	position: absolute;
+	top: 30%;
+	left: 29%;
+	color: white;
+	text-align: center;
+	line-height: 48px;
+}
+
+.pd {
+	padding-bottom: 10px;
+}
+
+
+/* MYFOOD */
+
+#myfood {
+	height: auto;
+	padding-bottom: 50px;
+}
+
+.add-container {
+	background-color: rgb(255, 255, 255);
+	height: auto;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 40px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+	padding-bottom: 40px;
+}
+
+#add-container {
+	text-align: center;
+}
+
+#form-add-meal input {
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	padding-left: 15px;
+	font-family: 'Titillium Web', sans-serif;
+	border: solid 2px rgb(121, 121, 121);
+	outline: none;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#meal {
+	width: 75%;
+	height: 50px;
+	margin: 15px auto;
+	padding-left: 15px;
+	font-family: 'Titillium Web', sans-serif;
+	border: solid 2px rgb(121, 121, 121);
+	outline: none;
+	font-size: 18px;
+}
+
+#add-container span input {
+	width: 170.5px;
+	margin: 15px auto;
+}
+
+#add-container span {
+	margin: 0 auto;
+	width: 75%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+#add-submit {
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	outline: none;
+	border: solid rgb(0, 0, 0) 2px;
+	background-color: rgb(0, 0, 0);
+	transition: background-color 0.5s ease-out;
+	color: white;
+	cursor: pointer;
+}
+
+#add-submit:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+#reset {
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	padding: 0 20px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	outline: none;
+	border: solid rgb(0, 0, 0) 2px;
+	background-color: rgb(0, 0, 0);
+	transition: background-color 0.5s ease-out;
+	color: white;
+	cursor: pointer;
+}
+
+#reset:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+::placeholder {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+#add-container h1 {
+	padding-top: 25px;
+	padding-bottom: 18px;
+	font-size: 30px;
+}
+
+#table-container {
+	padding: 20px;
+	height: auto;
+}
+
+#table-container h2 {
+	padding-top: 5px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.fa-times {
+	outline: none;
+	font-size: 18px;
+}
+
+.fa-times:hover {
+	color: rgb(235, 93, 12);
+}
+
+
+/* NUTRITION FACTS */
+
+#nutritionfacts {
+	min-height: 800px;
+}
+
+#searchbar {
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+	width: 60%;
+	height: 275px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+#search-input {
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin: 15px auto;
+	padding-left: 15px;
+	font-family: 'Titillium Web', sans-serif;
+	border: solid 2px rgb(121, 121, 121);
+	outline: none;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#searchbar h1 {
+	padding-top: 25px;
+	padding-bottom: 18px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#searchbar p {
+	font-size: 16px;
+	text-align: center;
+}
+
+#s-b-s-btn {
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	outline: none;
+	border: solid rgb(0, 0, 0) 2px;
+	background-color: rgb(0, 0, 0);
+	transition: background-color 0.5s ease-out;
+	color: white;
+	cursor: pointer;
+}
+
+#s-b-s-btn:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+#nut-results {
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: none;
+}
+
+.res-card {
+	width: 95%;
+	height: 100px;
+	background-color: red;
+	margin: 15px auto;
+	display: flex;
+}
+
+#item-photo {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	overflow: hidden;
+}
+
+#item-photo img {
+	width: 110%;
+}
+
+#item-info {
+	width: 90%;
+	height: 100%;
+	background-color: rgb(241, 241, 241);
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: background-color 0.5s ease-out;
+}
+
+#item-info:hover {
+	background-color: rgb(218, 216, 216);
+}
+
+#item-info h4 {
+	font-size: 20px;
+}
+
+#item-info p {
+	font-size: 18px;
+}
+
+
+/* fitness */
+
+.blogs-container {
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#fitness-blog {
+	min-height: 900px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+}
+
+.cards {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.cards div {
+	width: 310px;
+	height: 168.75px;
+}
+
+.cards p {
+	height: 60px;
+	width: 310px;
+	font-size: 17px;
+	font-weight: 600;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.cards img {
+	position: absolute;
+	width: 100%;
+}
+
+
+/* MY ACCOUNT */
+
+#myaccount {
+	min-height: 700px;
+}
+
+.cardy {
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	min-height: 700px;
+}
+
+#settings h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+/* #settings form input:not(#submit-set){
+    width: 75%;
+    height: 50px;
+    display: block;
+	margin: 0px auto;
+	padding-left: 15px;
+	font-family: 'Titillium Web', sans-serif;
+	border: solid 2px rgb(121, 121, 121);
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+} */
+
+.input-settings {
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin: 0px auto;
+	padding-left: 15px;
+	font-family: 'Titillium Web', sans-serif;
+	border: solid 2px rgb(121, 121, 121);
+	outline: none;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#settings form label {
+	width: 75%;
+	display: block;
+	margin: 0px auto;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+}
+
+#submit-set {
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	outline: none;
+	border: solid rgb(0, 0, 0) 2px;
+	background-color: rgb(0, 0, 0);
+	transition: background-color 0.5s ease-out;
+	color: white;
+	cursor: pointer;
+}
+
+#submit-set:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+#loader img {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+#loader h3 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+#loader {
+	display: none;
+}
+
+.error-input {
+	border: solid 3px rgb(195, 0, 0);
+}
+
+.sucess-input {
+	border: solid 3px green;
+}
+
+#notifications-div {
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	padding: 10px;
+	margin-top: 20px;
+}
+

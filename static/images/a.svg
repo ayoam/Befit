@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+	<defs>
+		<image width="78" height="80" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABQCAMAAACAqLPEAAAAAXNSR0IB2cksfwAAAFFQTFRFAAAAAJf/ABgqAAwVAAoQAAIDAAMFAAwVABIgAAEBAAAAAAgNAAwVAAMFABwzABAaAAgPAAEDAAgPABsyAAIEAAoRAAULABEdAAwTAAQGAAkOPcXIaAAAABt0Uk5TAACd5u/798DH///l6PhkkvL883H67ezRx/jwbJaJcQAAAIVJREFUeJzt2FsKglAYRWGPniz/UtPsOv+BZhCE4MN6C2St5803gF0UZmbL0lxZ5ZV2v+r9Z8a4QxOgI+ROBJtrEddBLaIn3BlzA+GwFiEnJycnJycnJycnJycnJ/cPbsDaSLgecxfCpQlqV/jy3JB2p6dRSo/2+zU9X2tnVM5VST8o20BvOedklCDPqe8AAAAASUVORK5CYII="/>
+		<image width="8" height="8" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIBAMAAAA2IaO4AAAAAXNSR0IB2cksfwAAABVQTFRFAF+hAF+hAF+hAF+hAF+hAF+hAF+hFZXQwAAAAAd0Uk5TAC6l86Tv/25D0qMAAAAnSURBVHicY2BUNhFgEE1LC2RwS0tLYjBLS0uGEGppaSkQCUZnIwEArwUI57XYfckAAAAASUVORK5CYII="/>
+		<image width="47" height="63" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA/CAMAAABHL2EFAAAAAXNSR0IB2cksfwAAADxQTFRFAAAAr6+vsrKysrKysrKysbGxsbGxsbGxsrKysbGxsbGxsrKysbGxsbGxrq6ur6+vqqqqsLCwsbGxsrKy1qNVogAAABR0Uk5TADCo6//wpy738qal7KMmEBVU3/5j73b8AAAAiElEQVR4nO3WvQ6AIAwE4ENA/Ffo+7+rQRMd7Q0u2hvK8jUpsBRwjQ+6xNYBqVPqmj5hIHgIIybKR9Q6L+tzlrnSw2/QZLu8igMf8rmIlKz2WeohDw23L+fvFa2X08tbnp2HvS/7nrqYN2/evHnzv/Ls/sbshzEwmTBSfkDqCd4lwLXakXzjsAMiZxQxLReqAAAAAABJRU5ErkJggg=="/>
+		<image width="22" height="21" id="img4" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVAQMAAAB47ozWAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAsrKykCGNKwAAAAJ0Uk5TAP9bkSK1AAAAEElEQVR4nGNgIBb8QcL4AQBwjAL1Uk/fkwAAAABJRU5ErkJggg=="/>
+		<image width="31" height="27" id="img5" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAbBAMAAAB2EUkcAAAAAXNSR0IB2cksfwAAAB5QTFRFAAAAAF+hXoiqh52tnamwp62xsrKyh56tqK2xnqmwBNrxUAAAAAp0Uk5TAAA85vv+/+f++5sb7eIAAAA0SURBVHicY2AYfkDIxFkRRUA1LS0IRaAsLS0dRaAtLS0FXSATvxaNtLQmVGsrp6NaS2cAAB/ZC2pjX9P/AAAAAElFTkSuQmCC"/>
+		<image width="30" height="26" id="img6" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaAQMAAACab373AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAsrKykCGNKwAAAAJ0Uk5TAP9bkSK1AAAAEUlEQVR4nGNgoBgwf0AhSAUAotwC2vz4EDYAAAAASUVORK5CYII="/>
+		<image width="30" height="28" id="img7" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcBAMAAACE1hKaAAAAAXNSR0IB2cksfwAAAB5QTFRFAAAAAF+hXoiqh52tnamwp62xsrKyh56tqK2xnqmwBNrxUAAAAAp0Uk5TAAA85vv+/+f++5sb7eIAAAA0SURBVHicY2AYCkDIxFkRma+alhaEzC9LS0tH5relpaWg8TPxqddIS2tCsa9yOop9gxcAANnBC2rFS/quAAAAAElFTkSuQmCC"/>
+		<image width="6" height="3" id="img8" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAADAQMAAACKz+y4AAAAAXNSR0IB2cksfwAAAANQTFRFsrKykjwJPgAAAAtJREFUeJxjYAABAAAGAAH+jGfIAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+		.shp1 { fill: #005fa1 } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<g id="Layer">
+				<use id="Layer" href="#img1" x="2" y="0" />
+				<path id="Layer" class="shp0" d="M34 20L50 20C51.11 20 52 20.89 52 22L52 22C52 23.11 51.11 24 50 24L34 24C32.89 24 32 23.11 32 22L32 22C32 20.89 32.89 20 34 20Z" />
+				<path id="Layer" class="shp0" d="M34 28L50 28C51.11 28 52 28.89 52 30L52 30C52 31.11 51.11 32 50 32L34 32C32.89 32 32 31.11 32 30L32 30C32 28.89 32.89 28 34 28Z" />
+				<path id="Layer" class="shp0" d="M34 36L50 36C51.11 36 52 36.89 52 38L52 38C52 39.11 51.11 40 50 40L34 40C32.89 40 32 39.11 32 38L32 38C32 36.89 32.89 36 34 36Z" />
+			</g>
+			<path id="Layer" fill-rule="evenodd" class="shp1" d="M19 8L58 8C60.21 8 62 9.82 62 12.07L62 66.94C62 69.18 60.21 71 58 71L19 71C16.79 71 15 69.18 15 66.94L15 12.07C15 9.82 16.79 8 19 8ZM19 14.07L19 64.94C19 65.2 19.05 65.46 19.15 65.7C19.25 65.94 19.4 66.16 19.59 66.35C19.77 66.53 19.99 66.68 20.23 66.78C20.48 66.88 20.74 66.94 21 66.94L56 66.94C56.26 66.94 56.52 66.88 56.77 66.78C57.01 66.68 57.23 66.53 57.41 66.35C57.6 66.16 57.75 65.94 57.85 65.7C57.95 65.46 58 65.2 58 64.94L58 14.07C58 13.8 57.95 13.54 57.85 13.3C57.75 13.06 57.6 12.84 57.41 12.65C57.23 12.47 57.01 12.32 56.77 12.22C56.52 12.12 56.26 12.07 56 12.07L21 12.07C20.74 12.07 20.48 12.12 20.23 12.22C19.99 12.32 19.77 12.47 19.59 12.65C19.4 12.84 19.25 13.06 19.15 13.3C19.05 13.54 19 13.8 19 14.07Z" />
+			<use id="Layer" href="#img2" x="20" y="19" />
+			<use id="Layer 1" href="#img3" x="15" y="8" />
+		</g>
+		<use id="Layer" href="#img4" x="9" y="12" />
+		<use id="Layer" href="#img5" x="6" y="22" />
+		<use id="Layer" href="#img6" x="3" y="24" />
+		<use id="Layer" href="#img7" x="10" y="40" />
+		<use id="Layer" href="#img8" x="17" y="53" />
+	</g>
+</svg>

@@ -1,0 +1,101 @@
+{% extends "user-base.html" %}
+{% block title%}
+<title>Befit : Dashboard</title>
+{% endblock%}
+{% block body%}
+<section id="dashboard">
+   <div id="all-container">
+      <div id="col1" class="card-container">
+         <p>Calories Remaining:</p>
+         <h3 class="pd">{{rem_cals}} Cals</h3>
+         <p style="font-size: 18px; text-align: center;">Daily Calories:<br> {{calories}} Cals</p>
+      </div>
+      <div id="col2" class="card-container">
+         <p>Proteins Remaining:</p>
+         <h3 class="pd">{{rem_prot}} g</h3>
+         <p style="font-size: 18px; text-align: center;">Daily Proteins:<br> {{proteins}} g</p>
+      </div>
+      <div id="col3" class="card-container">
+         <p>Carbs Remaining:</p>
+         <h3 class="pd">{{rem_carbs}} g</h3>
+         <p style="font-size: 18px; text-align: center;">Daily Carbs:<br> {{carbs}} g</p>
+      </div>
+      <div id="col4" class="card-container">
+         <p>Fats Remaining:</p>
+         <h3 class="pd">{{rem_fats}} g</h3>
+         <p style="font-size: 18px; text-align: center;">Daily Fats:<br> {{fats}} g</p>
+      </div>
+      <div id="col5" class="card-container" >
+         <div class="tips nfacts overlay" >
+            <a href="/nutrition-facts">
+               <h3>Nutrition<br> Facts</h3>
+               <img src="https://imageresizer.static9.net.au/i752_o1i1MhZMRlgOWS7lghc4Es=/636x358/smart/https%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2F2017%2F02%2F14%2F10%2F29%2F170214coach_vegetables.jpg">
+            </a>
+         </div>
+         <div class="tips fitness overlay">
+            <a href="/fitness">
+               <h3>Fitness <br> Tips</h3>
+               <img src="https://www.coque.lu/sites/default/files/styles/page_header_small/public/functional_training_w.jpg">
+            </a>
+         </div>
+         <div class="tips recipes overlay">
+            <a href="/healthy-recipes">
+               <h3>Healthy<br> Recipes</h3>
+               <img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/caponata-pasta_1.jpg">
+            </a>
+         </div>
+      </div>
+      <div id="col6" class="card-container">
+         <p>Current weight:</p>
+         <h3>{{c_weight}} KG</h3>
+         <p>Goal weight:</p>
+         <h3  style="font-weight: 500;">{{g_weight}} KG</h3>
+      </div>
+      <div id="col7" class="card-container">
+         <h2>Food entries</h2>
+         <table id="tb1" >
+            <tr>
+               <th >Meal</th>
+               <th>Food</th>
+               <th style="width:130px;" class="cntr">Calories</th>
+               <th style="width: 100px;" class="cntr">Proteins</th>
+               <th style="width: 100px;" class="cntr">Carbs</th>
+               <th style="width: 100px;" class="cntr">Fats</th>
+            </tr>
+            {%for row in food_rows%}
+            <tr>
+               <td>{{row["meal"]}}</td>
+               <td>{{row["food"]}}</td>
+               <td class="cntr">{{row["calories"]}}</td>
+               <td class="cntr">{{row["proteins"]}}</td>
+               <td class="cntr">{{row["carbs"]}}</td>
+               <td class="cntr">{{row["fats"]}}</td>
+            </tr>
+            {%endfor%}
+            {%for i in range(5 - row_len)%}
+            <tr>
+               <td></td>
+               <td></td>
+               <td class="cntr"></td>
+               <td class="cntr"></td>
+               <td class="cntr"></td>
+               <td class="cntr"></td>
+            </tr>
+            {%endfor%}
+         </table>
+      </div>
+      <div id="col8">
+         <div class="card-container col9">
+            <p>Daily water intake:</p>
+            <h3>3.5 L</h3>
+         </div>
+         <div class="card-container col9">
+            <p>{{day}}</p>
+            <h3>{{dayNum}}th</h3>
+            <p>{{month}}</p>
+            <p>{{year}}</p>
+         </div>
+      </div>
+   </div>
+</section>
+{% endblock%}
