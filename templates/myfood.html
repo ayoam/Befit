@@ -51,21 +51,21 @@
          <tr>
             <th >Meal</th>
             <th>Food</th>
-            <th style="width:130px;" class="cntr">Calories</th>
+            <th style="width:130px;" class="cntr1">Calories</th>
             <th style="width: 100px;" class="cntr">Proteins</th>
             <th style="width: 100px;" class="cntr">Carbs</th>
             <th style="width: 100px;" class="cntr">Fats</th>
-            <th style="width: 50px;" class="cntr"></th>
+            <th style="width: 50px;" class="cntr1"></th>
          </tr>
          {%for row in rows%}
          <tr>
             <td>{{row["meal"]}}</td>
             <td>{{row["food"]}}</td>
-            <td class="cntr">{{row["calories"]}}</td>
+            <td class="cntr1">{{row["calories"]}}</td>
             <td class="cntr">{{row["proteins"]}}</td>
             <td class="cntr">{{row["carbs"]}}</td>
             <td class="cntr">{{row["fats"]}}</td>
-            <td class="cntr">
+            <td class="cntr1">
                <form action="{{url_for('delete_entry', id=row["meal_id"])}}" method="POST">
                <input type="hidden" name="_method" value="DELETE">
                <button type="submit" style="border: none; background-color: transparent; outline: none; cursor: pointer;"><i class="fas fa-times"></i></button>
@@ -77,11 +77,11 @@
          <tr>
             <td></td>
             <td></td>
+            <td class="cntr1"></td>
             <td class="cntr"></td>
             <td class="cntr"></td>
             <td class="cntr"></td>
-            <td class="cntr"></td>
-            <td class="cntr"></td>
+            <td class="cntr1"></td>
          </tr>
          {%endfor%}
       </table>

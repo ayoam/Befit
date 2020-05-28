@@ -9,6 +9,35 @@
    </head>
    <body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <section id="mobile-navbar">
+         <img src="../static/images/menu-white.png" id="hum">
+   </section>
+   <div id="body-overlay" class="off-eff"></div>
+   <section id="mobile-dropdown">
+      <div id="dropdpwn-container" class="dropdown-off">
+         <img src="../static/images/times.png" id="quit" class="off-eff">
+         <ul>
+            <a href="/about">
+               <li>About</li>
+            </a>
+            <a href="/">
+               <li>Features</li>
+            </a>
+            <a href="/">
+               <li>Victory stories</li>
+            </a>
+            <a href="/contact-us">
+               <li>Contact us</li>
+            </a>
+            <a href="/login">
+               <li>Login</li>
+            </a>
+            <a href="/signup">
+               <li>Sign up</li>
+            </a>
+         </ul>
+      </div>
+   </section>
       <section id="navbar" class="fixed" style="position: fixed;">
          <div id="img-cont"><a href="/"><img src="../static/images/BEFIT.png"></a></div>
          <ul>
@@ -72,6 +101,31 @@
             <p>Copyright © 2020 Befit.  All rights reserved</p>
          </div>
       </footer>
+      <script>
+            let dropdown = document.getElementById('dropdpwn-container');
+            let bodyOverlay = document.getElementById('body-overlay');
+            let humButton = document.getElementById('hum');
+            let quitButton = document.getElementById('quit');
+           
+            humButton.addEventListener('click' , function(){
+               // if(dropdown.classList.contains('dropdown-off')){
+                  document.body.classList.add('stop-scrolling');
+                  dropdown.classList.add('dropdown-on');
+                  bodyOverlay.classList.add('on-eff');
+                  dropdown.classList.remove('dropdown-off');
+                  bodyOverlay.classList.remove('off-eff');
+                  quitButton.style.display='block';
+            })
+
+            quitButton.addEventListener('click',function(){
+                 document.body.classList.remove('stop-scrolling');
+                  dropdown.classList.remove('dropdown-on');
+                  bodyOverlay.classList.remove('on-eff');
+                  dropdown.classList.add('dropdown-off');
+                  bodyOverlay.classList.add('off-eff');
+                  quitButton.style.display='none';
+            })
+      </script>
       {%block script%}
       {%endblock%}
    </body>

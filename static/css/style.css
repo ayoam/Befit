@@ -1,1120 +1,2944 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap');
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 html,
 body {
-	height: 100vh;
+    height: 100vh;
 }
 
 body {
-	font-family: 'Titillium Web', sans-serif;
-	line-height: 1.5;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.5;
 }
 
 a {
-	text-decoration: none;
-	color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
-
-/* NAVBAR SECTION  */
-
-#navbar {
-	position: absolute;
-	z-index: 20;
-	width: 100%;
-	height: 70px;
-	display: flex;
-	align-items: center;
-}
-
-#navbar ul {
-	display: flex;
-	flex-direction: rows;
-	justify-content: center;
-	align-items: center;
-	width: 60%;
-}
-
-#navbar ul a li {
-	color: rgb(255, 255, 255);
-	list-style: none;
-	display: inline;
-	padding-right: 15px;
-	padding-left: 15px;
-	font-size: 22px;
-	font-weight: 600;
-	border: 2px solid transparent;
-	padding: 2px 15px;
-}
-
-#img-cont {
-	width: 20%;
-	padding-left: 20px;
-}
-
-#img-cont img {
-	width: 90px;
-}
-
-#navbar span {
-	display: flex;
-	flex-direction: rows;
-	justify-content: flex-end;
-	align-items: center;
-	width: 20%;
-	margin-right: 20px;
-}
-
-.span1 {
-	color: rgb(255, 255, 255);
-	list-style: none;
-	display: inline;
-	padding: 2px 15px;
-	font-size: 20px;
-	border: 2px solid transparent;
-	font-weight: 600;
-}
-
-#signup-btn li {
-	padding: 2px 15px;
-	background: white;
-	color: rgb(0, 0, 0);
-	border: solid #fff 2px;
-	transition: background-color 0.5s ease-out;
-	font-size: 20px;
-}
-
-.span1:hover {
-	border: solid #fff 2px;
-}
-
-#signup-btn li:hover {
-	background: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-}
-
-#navbar ul a li:hover {
-	border: solid #fff 2px;
-}
-
-.fixed {
-	position: fixed;
-	background-color: black;
-	top: 0;
-	z-index: 100;
-	width: 100%;
-	box-shadow: 0px 1px 9px -2px rgba(0, 0, 0, 0.75);
-}
-
-
-/* VIDEO BACKGROUND  */
-
-.content h1 {
-	font-weight: 700;
-	font-size: 70px;
-	line-height: 1.2;
-	margin-bottom: 15px;
-	text-transform: uppercase;
-}
-
-.content h3 {
-	font-weight: 300;
-	font-size: 16px;
-	color: white;
-}
-
-.showcase {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
-	padding: 0 20px;
-}
-
-.video-container {
-	position: absolute;
-	top: 0px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
-
-.video-container video {
-	min-width: 100%;
-	min-height: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	object-fit: cover;
-}
-
-.video-container:after {
-	content: '';
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.5);
-	position: absolute;
-}
-
-.content {
-	z-index: 2;
-}
-
-#home-btn {
-	display: inline-block;
-	padding: 10px 30px;
-	background: white;
-	color: rgb(0, 0, 0);
-	border: solid #fff 1px;
-	margin-top: 25px;
-	transition: background-color 0.5s ease-out;
-	font-size: 16px;
-	font-weight: 600;
-}
-
-#home-btn:hover {
-	background: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-}
-
-
-/* FEATURES SECTION  */
-
-#features {
-	padding: 75px;
-	text-align: center;
-	/* background:linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(219, 219, 219) 63%,rgb(207, 207, 207) 63%, rgb(175, 175, 175) 75%,rgb(143, 143, 143) 75%, rgb(134, 134, 134) 81%,rgb(136, 136, 136) 81%, rgb(179, 179, 179) 85%,rgb(128, 128, 128) 85%, rgb(184, 184, 184) 90%,rgb(184, 183, 183) 90%, rgb(230, 230, 230) 100%); */
-}
-
-.f-p {
-	font-size: 15px;
-	max-width: 600px;
-	margin: auto;
-}
-
-#features h1 {
-	font-size: 50px;
-}
-
-#three-cards {
-	margin-top: 70px;
-	display: flex;
-	flex-direction: rows;
-	justify-content: center;
-}
-
-.f-cards {
-	margin: 0 30px;
-	margin-bottom: 15px;
-	width: 20%;
-}
-
-.f-cards h3 {
-	margin-top: 10px;
-	font-size: 25px;
-}
-
-.f-cards p {
-	margin-top: 10px;
-	font-size: 16px;
-	color: black;
-}
-
-#f-btn {
-	display: inline-block;
-	padding: 10px 30px;
-	background: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-	border: solid #fff 1px;
-	margin-top: 50px;
-	transition: background-color 0.5s ease-out;
-	font-size: 16px;
-	font-weight: 600;
-}
-
-#f-btn:hover {
-	background: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	border: solid rgb(0, 0, 0) 1px;
-}
-
-
-/* VICTORY STORIES */
-
-.anchor {
-	display: block;
-	padding-top: 164px;
-	margin-top: -164px;
-}
-
-#v-stories {
-	/* background-color: rgb(129, 129, 129); */
-	/* background-color: rgb(240, 238, 238);
+@media (min-width: 991px) {
+    /* NAVBAR SECTION  */
+    #hum {
+        width: 80px;
+        position: fixed;
+        right: 0;
+        top: 18px;
+        cursor: pointer;
+        z-index: 50;
+        display: none;
+    }
+    #quit {
+        display: none;
+    }
+    #mobile-dropdown {
+        display: none;
+    }
+    #navbar {
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    #navbar ul a li {
+        color: rgb(255, 255, 255);
+        list-style: none;
+        display: inline;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 22px;
+        font-weight: 600;
+        border: 2px solid transparent;
+        padding: 2px 15px;
+    }
+    #img-cont {
+        width: 20%;
+        padding-left: 20px;
+    }
+    #img-cont img {
+        width: 90px;
+    }
+    #navbar span {
+        display: flex;
+        flex-direction: rows;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20%;
+        margin-right: 20px;
+    }
+    .span1 {
+        color: rgb(255, 255, 255);
+        list-style: none;
+        display: inline;
+        padding: 2px 15px;
+        font-size: 20px;
+        border: 2px solid transparent;
+        font-weight: 600;
+    }
+    #signup-btn li {
+        padding: 2px 15px;
+        background: white;
+        color: rgb(0, 0, 0);
+        border: solid #fff 2px;
+        transition: background-color 0.5s ease-out;
+        font-size: 20px;
+    }
+    .span1:hover {
+        border: solid #fff 2px;
+    }
+    #signup-btn li:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    #navbar ul a li:hover {
+        border: solid #fff 2px;
+    }
+    .fixed {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        box-shadow: 0px 1px 9px -2px rgba(0, 0, 0, 0.75);
+    }
+    /* VIDEO BACKGROUND  */
+    .content h1 {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    .content h3 {
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+    .showcase {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        padding: 0 20px;
+    }
+    .video-container {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .video-container video {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+    .video-container:after {
+        content: '';
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+    }
+    .content {
+        z-index: 2;
+    }
+    #home-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        background: white;
+        color: rgb(0, 0, 0);
+        border: solid #fff 1px;
+        margin-top: 25px;
+        transition: background-color 0.5s ease-out;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #home-btn:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    /* FEATURES SECTION  */
+    #features {
+        padding: 75px;
+        text-align: center;
+        /* background:linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(219, 219, 219) 63%,rgb(207, 207, 207) 63%, rgb(175, 175, 175) 75%,rgb(143, 143, 143) 75%, rgb(134, 134, 134) 81%,rgb(136, 136, 136) 81%, rgb(179, 179, 179) 85%,rgb(128, 128, 128) 85%, rgb(184, 184, 184) 90%,rgb(184, 183, 183) 90%, rgb(230, 230, 230) 100%); */
+    }
+    .f-p {
+        font-size: 15px;
+        max-width: 600px;
+        margin: auto;
+    }
+    #features h1 {
+        font-size: 50px;
+    }
+    #three-cards {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+    }
+    .f-cards {
+        margin: 0 30px;
+        margin-bottom: 15px;
+        width: 20%;
+    }
+    .f-cards h3 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .f-cards p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: black;
+    }
+    #f-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: solid #fff 1px;
+        margin-top: 50px;
+        transition: background-color 0.5s ease-out;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #f-btn:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: solid rgb(0, 0, 0) 1px;
+    }
+    /* VICTORY STORIES */
+    .anchor {
+        display: block;
+        padding-top: 164px;
+        margin-top: -164px;
+    }
+    #v-stories {
+        /* background-color: rgb(129, 129, 129); */
+        /* background-color: rgb(240, 238, 238);
 	/* background: repeating-linear-gradient(45deg, #cccccc, #cccccc 60px,  #fff 0, #fff 120px); */
-	/* background: linear-gradient(to right, #000000, #eeeeee);  */
-	background-color: black;
-	padding: 68px 0;
-	text-align: center;
-}
-
-.f-p {
-	font-size: 15px;
-	max-width: 600px;
-	margin: auto;
-	margin-bottom: 50px;
-	color: rgb(255, 255, 255);
-}
-
-#v-stories h1 {
-	font-size: 50px;
-	color: rgb(255, 255, 255);
-}
-
-
-/*Carousel*/
-
-.carrousel {
-	/* background: #ffffff; */
-	background: linear-gradient(to top, #dfdfdf, #ffffff);
-	text-align: center;
-	padding: 3em 0;
-	height: 380px;
-	max-width: 800px;
-	margin: auto;
-	position: relative;
-	overflow: hidden;
-	-webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
-	-moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
-	box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
-}
-
-.car-h2 {
-	margin: 0;
-	margin-top: -0.9em;
-	padding: 0;
-	font-size: 28px;
-	text-align: center;
-	color: #000000;
-}
-
-.carrousel .slides {
-	width: 400%;
-	left: 0;
-	padding-left: 0;
-	padding-top: 1em;
-	overflow: hidden;
-	list-style: none;
-	position: relative;
-	-webkit-transition: transform .5s;
-	-moz-transition: transform .5s;
-	-o-transition: transform .5s;
-	transition: transform .5s;
-}
-
-.carrousel .slides li {
-	width: 25%;
-	position: relative;
-	float: left;
-}
-
-.carrousel li p {
-	margin-top: 0;
-}
-
-.carrousel li q {
-	display: block;
-	max-width: 80%;
-	margin: auto;
-	color: #666666;
-	font-size: 1.5em;
-	font-weight: 500;
-	font-style: italic;
-	margin-top: 20px;
-}
-
-.carrousel li img {
-	width: 4em;
-	height: 4em;
-	object-fit: cover;
-	border-radius: 50%;
-	margin-left: -1.5em;
-	margin-right: 0.5em;
-	vertical-align: middle;
-	margin-top: 20px;
-}
-
-.carrousel li span.author {
-	margin-top: 0.5em;
-	font-size: 1.4em;
-	color: #000000;
-	display: block;
-}
-
-.carrousel .slidesNavigation {
-	display: block;
-	list-style: none;
-	text-align: center;
-	bottom: 1em;
-	/*--- Centering trick---*/
-	/* Absolute positioning*/
-	position: absolute;
-	/* Abosulte positioning*/
-	width: 104px;
-	/*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
-	left: 52%;
-	/*Centering de element*/
-	margin-left: -52px;
-	/*adjusting the centering by applying a negative margin of half of the width*/
-}
-
-.carrousel input {
-	display: none;
-}
-
-.carrousel .slidesNavigation label {
-	float: left;
-	margin: 6px;
-	display: block;
-	height: 10px;
-	width: 10px;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	border: solid 2px #646464;
-	font-size: 0;
-}
-
-
-/* You have to repeat this with each slide
+        /* background: linear-gradient(to right, #000000, #eeeeee);  */
+        background-color: black;
+        padding: 68px 0;
+        text-align: center;
+    }
+    .f-p {
+        font-size: 15px;
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+        color: rgb(255, 255, 255);
+    }
+    #v-stories h1 {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+    }
+    /*Carousel*/
+    .carrousel {
+        /* background: #ffffff; */
+        background: linear-gradient(to top, #dfdfdf, #ffffff);
+        text-align: center;
+        padding: 3em 0;
+        height: 380px;
+        max-width: 800px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+        box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+    }
+    .car-h2 {
+        margin: 0;
+        margin-top: -0.9em;
+        padding: 0;
+        font-size: 28px;
+        text-align: center;
+        color: #000000;
+    }
+    .carrousel .slides {
+        width: 400%;
+        left: 0;
+        padding-left: 0;
+        padding-top: 1em;
+        overflow: hidden;
+        list-style: none;
+        position: relative;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+    }
+    .carrousel .slides li {
+        width: 25%;
+        position: relative;
+        float: left;
+    }
+    .carrousel li p {
+        margin-top: 0;
+    }
+    .carrousel li q {
+        display: block;
+        max-width: 80%;
+        margin: auto;
+        color: #666666;
+        font-size: 1.5em;
+        font-weight: 500;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .carrousel li img {
+        width: 4em;
+        height: 4em;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: -1.5em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+        margin-top: 20px;
+    }
+    .carrousel li span.author {
+        margin-top: 0.5em;
+        font-size: 1.4em;
+        color: #000000;
+        display: block;
+    }
+    .carrousel .slidesNavigation {
+        display: block;
+        list-style: none;
+        text-align: center;
+        bottom: 1em;
+        /*--- Centering trick---*/
+        /* Absolute positioning*/
+        position: absolute;
+        /* Abosulte positioning*/
+        width: 104px;
+        /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+        left: 52%;
+        /*Centering de element*/
+        margin-left: -52px;
+        /*adjusting the centering by applying a negative margin of half of the width*/
+    }
+    .carrousel input {
+        display: none;
+    }
+    .carrousel .slidesNavigation label {
+        float: left;
+        margin: 6px;
+        display: block;
+        height: 10px;
+        width: 10px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: solid 2px #646464;
+        font-size: 0;
+    }
+    /* You have to repeat this with each slide
   TODO: make it easier with SCSS
   25% movement 100/slides-num
   */
-
-#radio-1:checked~.slides {
-	transform: translateX(0%);
-}
-
-#radio-2:checked~.slides {
-	transform: translateX(-25%);
-}
-
-#radio-3:checked~.slides {
-	transform: translateX(-50%);
-}
-
-#radio-4:checked~.slides {
-	transform: translateX(-75%);
-}
-
-.carrousel .slidesNavigation label:hover {
-	cursor: pointer;
-}
-
-
-/* You have to repeat this with each slide/dot */
-
-.carrousel #radio-1:checked~.slidesNavigation label#dotForRadio-1,
-.carrousel #radio-2:checked~.slidesNavigation label#dotForRadio-2,
-.carrousel #radio-3:checked~.slidesNavigation label#dotForRadio-3,
-.carrousel #radio-4:checked~.slidesNavigation label#dotForRadio-4 {
-	background: #000000;
-}
-
-@media (max-width: 796px) {
-	.carrousel {
-		height: 8.5em;
-	}
-}
-
-@media (max-width: 480px) {
-	.carrousel li p {
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-	}
-	.carrousel li q {
-		font-size: 1em;
-	}
-	.carrousel li img {
-		width: 2em;
-		margin-left: -1em;
-		margin-right: 0.25em;
-	}
-}
-
-
-/* newsletter   */
-
-#newsletter {
-	/* background-color: rgb(255, 255, 255); */
-	height: 670px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* background-image:url('268671-P56008-73.jpg');
+    #radio-1:checked~.slides {
+        transform: translateX(0%);
+    }
+    #radio-2:checked~.slides {
+        transform: translateX(-25%);
+    }
+    #radio-3:checked~.slides {
+        transform: translateX(-50%);
+    }
+    #radio-4:checked~.slides {
+        transform: translateX(-75%);
+    }
+    .carrousel .slidesNavigation label:hover {
+        cursor: pointer;
+    }
+    /* You have to repeat this with each slide/dot */
+    .carrousel #radio-1:checked~.slidesNavigation label#dotForRadio-1,
+    .carrousel #radio-2:checked~.slidesNavigation label#dotForRadio-2,
+    .carrousel #radio-3:checked~.slidesNavigation label#dotForRadio-3,
+    .carrousel #radio-4:checked~.slidesNavigation label#dotForRadio-4 {
+        background: #000000;
+    }
+    @media (max-width: 796px) {
+        .carrousel {
+            height: 8.5em;
+        }
+    }
+    @media (max-width: 480px) {
+        .carrousel li p {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        .carrousel li q {
+            font-size: 1em;
+        }
+        .carrousel li img {
+            width: 2em;
+            margin-left: -1em;
+            margin-right: 0.25em;
+        }
+    }
+    /* newsletter   */
+    #newsletter {
+        /* background-color: rgb(255, 255, 255); */
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-image:url('268671-P56008-73.jpg');
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	  opacity: 0.6; */
-	position: relative;
-}
-
-#newsletter::after {
-	content: "";
-	background: url(268671-P56008-73.jpg);
-	filter: grayscale(100%);
-	opacity: 0.9;
-	background-repeat: no-repeat;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
-}
-
-#news-container {
-	padding: 40px;
-	width: 70%;
-	height: 95%;
-	display: flex;
-}
-
-.image-half {
-	background-color: rgb(0, 0, 0);
-	width: 30%;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
-.image-half img {
-	width: 180%;
-	position: absolute;
-	right: 200;
-	opacity: 0.5;
-}
-
-.content-half {
-	background-color: rgb(0, 0, 0);
-	width: 70%;
-	height: 100%;
-	padding: 40px;
-}
-
-.content-half h2 {
-	color: white;
-	width: 80%;
-	margin: 0 auto;
-}
-
-.content-half p {
-	color: white;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.rem {
-	margin-top: 20px;
-	text-align: center;
-}
-
-.content-half h2 {
-	margin-top: 20px;
-	font-size: 38px;
-	margin-bottom: 40px;
-}
-
-.content-half p {
-	font-size: 18px;
-	margin-bottom: 40px;
-}
-
-#m-l-email {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-	line-height: 50px;
-	padding-left: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	border: none;
-	outline: none;
-	font-size: 20px;
-	font-weight: 600;
-}
-
-#submit-btn {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-	height: 50px;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	outline: none;
-	border: solid #fff 2px;
-	background-color: white;
-	transition: background-color 0.5s ease-out;
-	margin-top: 12px;
-	cursor: pointer;
-}
-
-#submit-btn:hover {
-	background-color: rgb(0, 0, 0);
-	color: white;
-}
-
-
-/* FOOTER */
-
-footer {
-	background-color: black;
-	height: 210px;
-}
-
-.p1 {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	justify-content: center;
-}
-
-.p1 ul {
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	padding-right: 20px;
-	width: 60%;
-	padding: 20px 0;
-}
-
-.p1 ul li {
-	list-style: none;
-	font-size: 20px;
-	font-weight: 600;
-	padding-right: 15px;
-	padding-left: 15px;
-	color: white;
-}
-
-.p2 {
-	text-align: center;
-	font-size: 10px;
-}
-
-.p3 {
-	text-align: center;
-	color: white;
-}
-
-.p2 a {
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-.p2 {
-	padding: 20px 0;
-	color: white;
-}
-
-.p {
-	padding: 20px 0;
-}
-
-
-/* ABOUT */
-
-#about p {
-	color: black;
-}
-
-#about-page {
-	height: 1100px;
-}
-
-#about {
-	background-color: rgb(255, 255, 255);
-	border-radius: 3px;
-	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
-	width: 70%;
-	margin: 20px auto;
-	margin-top: 120px;
-	padding-bottom: 60px;
-}
-
-#about p {
-	margin: 0 auto;
-	font-size: 18px;
-	width: 90%;
-}
-
-#about h1 {
-	margin: 0;
-	font-size: 60px;
-	text-align: center;
-	padding-top: 30px;
-	margin-bottom: 60px;
-}
-
-#about h3 {
-	margin: 0 auto;
-	width: 90%;
-	font-size: 35px;
-	margin-bottom: 20px;
-}
-
-#about ul {
-	margin: 0 auto;
-	width: 90%;
-	padding-left: 20px;
-	font-size: 18px;
-}
-
-
-/* CONTACT PAGE */
-
-#contact {
-	padding-top: 70px;
-	height: 800px;
-	display: flex;
-	width: 100%;
-}
-
-#map {
-	background-color: rgb(88, 88, 88);
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
-}
-
-#map img {
-	width: 150%;
-	position: absolute;
-	display: block;
-	top: 0px;
-	left: -390px;
-}
-
-#contact-form {
-	background-color: rgb(255, 255, 255);
-	width: 50%;
-	height: 100%;
-}
-
-#contact-form h1 {
-	margin: 0;
-	font-size: 60px;
-	text-align: center;
-	padding-top: 30px;
-	margin-bottom: 30px;
-}
-
-#contact-form p {
-	width: 80%;
-	margin: 0 auto;
-	padding-bottom: 30px;
-}
-
-#c-f-name,
-#c-f-email {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-	line-height: 50px;
-	padding-left: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	margin-bottom: 15px;
-	border: solid 2px rgb(121, 121, 121);
-	outline: none;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-#contact-form textarea {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-	line-height: 50px;
-	padding-left: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	color: rgb(107, 107, 107);
-	margin-bottom: 15px;
-	font-size: 16px;
-	border: solid 2px rgb(121, 121, 121);
-	height: 200px;
-	outline: none;
-	font-size: 18px;
-	font-weight: 600;
-	color: black;
-}
-
-#c-f-submit {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-	height: 50px;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	outline: none;
-	border: solid rgb(0, 0, 0) 2px;
-	background-color: rgb(0, 0, 0);
-	transition: background-color 0.5s ease-out;
-	margin-top: 12px;
-	color: white;
-	cursor: pointer;
-}
-
-#c-f-submit:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-}
-
-
-/* LOGIN PAGE */
-
-#login-page {
-	height: 800px;
-	display: flex;
-}
-
-#ln-image {
-	padding-top: 80px;
-	width: 50%;
-	height: 100%;
-	background-color: black;
-	position: relative;
-	overflow: hidden;
-}
-
-#ln-image img {
-	width: 100%;
-	position: absolute;
-	top: 5%;
-	opacity: 0.9;
-}
-
-#login-form {
-	padding-top: 80px;
-	width: 50%;
-	height: 100%;
-	background-color: rgb(255, 255, 255);
-}
-
-#login-form h1 {
-	margin: 0;
-	font-size: 60px;
-	text-align: center;
-	padding-top: 30px;
-}
-
-#wlcm {
-	margin: 0;
-	font-size: 18px;
-	text-align: center;
-	padding-top: 30px;
-	margin-bottom: 10px;
-}
-
-#l-f-name,
-#l-f-password {
-	display: block;
-	width: 70%;
-	margin: 0 auto;
-	line-height: 50px;
-	padding-left: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	margin-bottom: 15px;
-	border: solid 2px rgb(121, 121, 121);
-	outline: none;
-	font-size: 20px;
-	font-weight: 600;
-}
-
-#l-f-submit {
-	display: block;
-	width: 70%;
-	margin: 0 auto;
-	height: 50px;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	outline: none;
-	border: solid rgb(0, 0, 0) 2px;
-	background-color: rgb(0, 0, 0);
-	transition: background-color 0.5s ease-out;
-	margin-top: 12px;
-	color: white;
-	cursor: pointer;
-}
-
-#l-f-submit:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-}
-
-#login-form p a {
-	text-decoration: underline;
-	color: rgb(112, 112, 112);
-}
-
-#forgot {
-	font-size: 18px;
-	width: 70%;
-	margin: 0 auto;
-	text-align: left;
-	padding-top: 15px;
-	color: rgb(112, 112, 112);
-	text-decoration: underline;
-}
-
-#s-up {
-	margin: 0;
-	font-size: 18px;
-	text-align: center;
-	padding-top: 90px;
-	font-weight: 600;
-}
-
-#error {
-	display: block;
-	width: 70%;
-	margin: 0 auto;
-	line-height: 40px;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	outline: none;
-	background-color: rgb(233, 124, 0);
-	margin-bottom: 12px;
-	color: white;
-	cursor: pointer;
-	text-align: center;
-}
-
-#empty {
-	background-color: transparent;
-	height: 60px;
-}
-
-
-/* SIGN UP PAGE */
-
-#error-div {
-	background-color: rgb(233, 124, 0);
-	width: 40%;
-	height: auto;
-	margin: 0 auto;
-	margin-bottom: 15px;
-	padding: 10px;
-}
-
-#signup {
-	height: 1670px;
-	padding-top: 70px;
-}
-
-#signup h1 {
-	margin: 0;
-	font-size: 60px;
-	text-align: center;
-	padding-top: 30px;
-	margin-bottom: 40px;
-}
-
-.inpt {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	line-height: 50px;
-	padding-left: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	margin-bottom: 15px;
-	border: solid 2px rgb(121, 121, 121);
-	outline: none;
-}
-
-#f2 {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	padding-left: 5px;
-	padding-bottom: 10px;
-}
-
-#f2 input {
-	margin-bottom: 10px;
-}
-
-input[type="radio"] {
-	margin: 15px 5px 0 5px;
-	margin-top: 8px;
-	vertical-align: middle;
-}
-
-#xe {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	padding-left: 5px;
-	padding-top: 10px;
-	padding-bottom: 13px;
-}
-
-input[type="date"]:before {
-	content: attr(placeholder) !important;
-	color: rgb(56, 52, 52);
-	margin-right: 0.5em;
-	font-size: 16px;
-	font-weight: 500;
-}
-
-input[type="date"]:focus:before,
-input[type="date"]:valid:before {
-	content: "";
-}
-
-#signup input {
-	font-size: 18px;
-	font-weight: 600;
-}
-
-#signup select {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	height: 50px;
-	padding-left: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	margin-bottom: 15px;
-	border: solid 2px rgb(121, 121, 121);
-	outline: none;
-	margin-top: 10px;
-	font-size: 16px;
-}
-
-#f5 {
-	display: flex;
-	width: 40%;
-	flex-direction: row;
-	margin: 0 auto;
-	justify-content: space-between;
-}
-
-#f5 input {
-	display: block;
-	width: 48%;
-	line-height: 50px;
-	padding-left: 15px;
-	font-family: 'Titillium Web', sans-serif;
-	margin-bottom: 15px;
-	border: solid 2px rgb(121, 121, 121);
-	outline: none;
-}
-
-#ww {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-
-#rw {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	margin-bottom: 30px;
-}
-
-.boldy {
-	font-weight: 600;
-}
-
-#date {
-	font-size: 16px;
-	color: grey;
-}
-
-#s-u-signupbtn {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	height: 50px;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	outline: none;
-	border: solid rgb(0, 0, 0) 2px;
-	background-color: rgb(0, 0, 0);
-	transition: background-color 0.5s ease-out;
-	margin-top: 20px;
-	color: white;
-	cursor: pointer;
-	margin-bottom: 30px;
-}
-
-#s-u-signupbtn:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-}
-
-.notice {
-	display: block;
-	width: 40%;
-	margin: 0 auto;
-	padding-left: 5px;
-}
-
-.notice a {
-	color: grey;
-	text-decoration: underline;
-}
-
-
-/* Chrome, Safari, Edge, Opera */
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-
-/* Firefox */
-
-input[type=number] {
-	-moz-appearance: textfield;
-}
-
-::placeholder {
-	font-size: 16px;
-	font-weight: 500;
-}
-
-input[type="submit"][disabled] {
-	color: black;
-}
-
-.error-input {
-	border: solid 3px rgb(195, 0, 0);
-}
-
-.sucess-input {
-	border: solid 3px green;
+        position: relative;
+    }
+    #newsletter::after {
+        content: "";
+        background: url(268671-P56008-73.jpg);
+        filter: grayscale(100%);
+        opacity: 0.9;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    #news-container {
+        padding: 40px;
+        width: 70%;
+        height: 95%;
+        display: flex;
+    }
+    .image-half {
+        background-color: rgb(0, 0, 0);
+        width: 30%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .image-half img {
+        width: 180%;
+        position: absolute;
+        right: 200;
+        opacity: 0.5;
+    }
+    .content-half {
+        background-color: rgb(0, 0, 0);
+        width: 70%;
+        height: 100%;
+        padding: 40px;
+    }
+    .content-half h2 {
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .content-half p {
+        color: white;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rem {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .content-half h2 {
+        margin-top: 20px;
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+    .content-half p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    #m-l-email {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #submit-btn {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid #fff 2px;
+        background-color: white;
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+    #submit-btn:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    /* FOOTER */
+    footer {
+        background-color: black;
+        height: 210px;
+    }
+    .p1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .p1 ul {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 20px;
+        width: 60%;
+        padding: 20px 0;
+    }
+    .p1 ul li {
+        list-style: none;
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: white;
+    }
+    .p2 {
+        text-align: center;
+        font-size: 10px;
+    }
+    .p3 {
+        text-align: center;
+        color: white;
+    }
+    .p2 a {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .p2 {
+        padding: 20px 0;
+        color: white;
+    }
+    .p {
+        padding: 20px 0;
+    }
+    /* ABOUT */
+    #about p {
+        color: black;
+    }
+    #about-page {
+        height: 1100px;
+    }
+    #about {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+        width: 70%;
+        margin: 20px auto;
+        margin-top: 120px;
+        padding-bottom: 60px;
+    }
+    #about p {
+        margin: 0 auto;
+        font-size: 18px;
+        width: 90%;
+    }
+    #about h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 60px;
+    }
+    #about h3 {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    #about ul {
+        margin: 0 auto;
+        width: 90%;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    /* CONTACT PAGE */
+    #contact {
+        padding-top: 70px;
+        height: 800px;
+        display: flex;
+        width: 100%;
+    }
+    #map {
+        background-color: rgb(88, 88, 88);
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    #map img {
+        width: 150%;
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: -390px;
+    }
+    #contact-form {
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        height: 100%;
+    }
+    #contact-form h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    #contact-form p {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    #c-f-name,
+    #c-f-email {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #contact-form textarea {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        color: rgb(107, 107, 107);
+        margin-bottom: 15px;
+        font-size: 16px;
+        border: solid 2px rgb(121, 121, 121);
+        height: 200px;
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+    }
+    #c-f-submit {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    #c-f-submit:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    /* LOGIN PAGE */
+    #login-page {
+        height: 800px;
+        display: flex;
+    }
+    #ln-image {
+        padding-top: 80px;
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+    }
+    #ln-image img {
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        opacity: 0.9;
+    }
+    #login-form {
+        padding-top: 80px;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    #login-form h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #wlcm {
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+    #l-f-name,
+    #l-f-password {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #l-f-submit {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    #l-f-submit:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    #login-form p a {
+        text-decoration: underline;
+        color: rgb(112, 112, 112);
+    }
+    #forgot {
+        font-size: 18px;
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 15px;
+        color: rgb(112, 112, 112);
+        text-decoration: underline;
+    }
+    #s-up {
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 90px;
+        font-weight: 600;
+    }
+    #error {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 40px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        outline: none;
+        background-color: rgb(233, 124, 0);
+        margin-bottom: 12px;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+    #empty {
+        background-color: transparent;
+        height: 60px;
+    }
+    /* SIGN UP PAGE */
+    #error-div {
+        background-color: rgb(233, 124, 0);
+        width: 40%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    #signup {
+        height: 1670px;
+        padding-top: 70px;
+    }
+    #signup h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+    .inpt {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+    }
+    #f2 {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-bottom: 10px;
+    }
+    #f2 input {
+        margin-bottom: 10px;
+    }
+    input[type="radio"] {
+        margin: 15px 5px 0 5px;
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    #xe {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 13px;
+    }
+    input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: rgb(56, 52, 52);
+        margin-right: 0.5em;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input[type="date"]:focus:before,
+    input[type="date"]:valid:before {
+        content: "";
+    }
+    #signup input {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #signup select {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #f5 {
+        display: flex;
+        width: 40%;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    #f5 input {
+        display: block;
+        width: 48%;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+    }
+    #ww {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    #rw {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .boldy {
+        font-weight: 600;
+    }
+    #date {
+        font-size: 16px;
+        color: grey;
+    }
+    #s-u-signupbtn {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 20px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    #s-u-signupbtn:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    .notice {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        padding-left: 5px;
+    }
+    .notice a {
+        color: grey;
+        text-decoration: underline;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+     ::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input[type="submit"][disabled] {
+        color: black;
+    }
+    .error-input {
+        border: solid 3px rgb(195, 0, 0);
+    }
+    .sucess-input {
+        border: solid 3px green;
+    }
+}
+
+@media (min-width: 926px) and (max-width: 991px) {
+    /* NAVBAR SECTION  */
+    #hum {
+        width: 80px;
+        position: fixed;
+        right: 0;
+        top: 18px;
+        cursor: pointer;
+        z-index: 50;
+        display: none;
+    }
+    #quit {
+        display: none;
+    }
+    #mobile-dropdown {
+        display: none;
+    }
+    #navbar {
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    #navbar ul a li {
+        color: rgb(255, 255, 255);
+        list-style: none;
+        display: inline;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 22px;
+        font-weight: 600;
+        border: 2px solid transparent;
+        padding: 2px 15px;
+    }
+    #img-cont {
+        width: 20%;
+        padding-left: 20px;
+    }
+    #img-cont img {
+        width: 90px;
+    }
+    #navbar span {
+        display: flex;
+        flex-direction: rows;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20%;
+        margin-right: 20px;
+    }
+    .span1 {
+        color: rgb(255, 255, 255);
+        list-style: none;
+        display: inline;
+        padding: 2px 15px;
+        font-size: 20px;
+        border: 2px solid transparent;
+        font-weight: 600;
+    }
+    #signup-btn li {
+        padding: 2px 15px;
+        background: white;
+        color: rgb(0, 0, 0);
+        border: solid #fff 2px;
+        transition: background-color 0.5s ease-out;
+        font-size: 20px;
+    }
+    .span1:hover {
+        border: solid #fff 2px;
+    }
+    #signup-btn li:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    #navbar ul a li:hover {
+        border: solid #fff 2px;
+    }
+    .fixed {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        box-shadow: 0px 1px 9px -2px rgba(0, 0, 0, 0.75);
+    }
+    /* VIDEO BACKGROUND  */
+    .content h1 {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    .content h3 {
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+    .showcase {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        padding: 0 20px;
+    }
+    .video-container {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .video-container video {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+    .video-container:after {
+        content: '';
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+    }
+    .content {
+        z-index: 2;
+    }
+    #home-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        background: white;
+        color: rgb(0, 0, 0);
+        border: solid #fff 1px;
+        margin-top: 25px;
+        transition: background-color 0.5s ease-out;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #home-btn:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    /* FEATURES SECTION  */
+    #features {
+        padding: 75px;
+        text-align: center;
+        /* background:linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(219, 219, 219) 63%,rgb(207, 207, 207) 63%, rgb(175, 175, 175) 75%,rgb(143, 143, 143) 75%, rgb(134, 134, 134) 81%,rgb(136, 136, 136) 81%, rgb(179, 179, 179) 85%,rgb(128, 128, 128) 85%, rgb(184, 184, 184) 90%,rgb(184, 183, 183) 90%, rgb(230, 230, 230) 100%); */
+    }
+    .f-p {
+        font-size: 1px;
+        margin: auto;
+        color: rgb(0, 0, 0);
+    }
+    #features h1 {
+        font-size: 50px;
+    }
+    #three-cards {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+    }
+    .f-cards {
+        margin: 0 30px;
+        margin-bottom: 15px;
+        width: 30%;
+    }
+    .f-cards h3 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .f-cards p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: black;
+    }
+    #f-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: solid #fff 1px;
+        margin-top: 50px;
+        transition: background-color 0.5s ease-out;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #f-btn:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: solid rgb(0, 0, 0) 1px;
+    }
+    /* VICTORY STORIES */
+    .anchor {
+        display: block;
+        padding-top: 164px;
+        margin-top: -164px;
+    }
+    #v-stories {
+        /* background-color: rgb(129, 129, 129); */
+        /* background-color: rgb(240, 238, 238);
+	/* background: repeating-linear-gradient(45deg, #cccccc, #cccccc 60px,  #fff 0, #fff 120px); */
+        /* background: linear-gradient(to right, #000000, #eeeeee);  */
+        background-color: black;
+        padding: 68px 0;
+        text-align: center;
+    }
+    .f-p {
+        font-size: 15px;
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+        color: rgb(255, 255, 255);
+    }
+    #v-stories h1 {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+    }
+    /*Carousel*/
+    .carrousel {
+        /* background: #ffffff; */
+        background: linear-gradient(to top, #dfdfdf, #ffffff);
+        text-align: center;
+        padding: 3em 0;
+        height: 380px;
+        max-width: 800px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+        box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+    }
+    .car-h2 {
+        margin: 0;
+        margin-top: -0.9em;
+        padding: 0;
+        font-size: 28px;
+        text-align: center;
+        color: #000000;
+    }
+    .carrousel .slides {
+        width: 400%;
+        left: 0;
+        padding-left: 0;
+        padding-top: 1em;
+        overflow: hidden;
+        list-style: none;
+        position: relative;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+    }
+    .carrousel .slides li {
+        width: 25%;
+        position: relative;
+        float: left;
+    }
+    .carrousel li p {
+        margin-top: 0;
+    }
+    .carrousel li q {
+        display: block;
+        max-width: 80%;
+        margin: auto;
+        color: #666666;
+        font-size: 1.5em;
+        font-weight: 500;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .carrousel li img {
+        width: 4em;
+        height: 4em;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: -1.5em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+        margin-top: 20px;
+    }
+    .carrousel li span.author {
+        margin-top: 0.5em;
+        font-size: 1.4em;
+        color: #000000;
+        display: block;
+    }
+    .carrousel .slidesNavigation {
+        display: block;
+        list-style: none;
+        text-align: center;
+        bottom: 1em;
+        /*--- Centering trick---*/
+        /* Absolute positioning*/
+        position: absolute;
+        /* Abosulte positioning*/
+        width: 104px;
+        /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+        left: 52%;
+        /*Centering de element*/
+        margin-left: -52px;
+        /*adjusting the centering by applying a negative margin of half of the width*/
+    }
+    .carrousel input {
+        display: none;
+    }
+    .carrousel .slidesNavigation label {
+        float: left;
+        margin: 6px;
+        display: block;
+        height: 10px;
+        width: 10px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: solid 2px #646464;
+        font-size: 0;
+    }
+    /* You have to repeat this with each slide
+  TODO: make it easier with SCSS
+  25% movement 100/slides-num
+  */
+    #radio-1:checked~.slides {
+        transform: translateX(0%);
+    }
+    #radio-2:checked~.slides {
+        transform: translateX(-25%);
+    }
+    #radio-3:checked~.slides {
+        transform: translateX(-50%);
+    }
+    #radio-4:checked~.slides {
+        transform: translateX(-75%);
+    }
+    .carrousel .slidesNavigation label:hover {
+        cursor: pointer;
+    }
+    /* You have to repeat this with each slide/dot */
+    .carrousel #radio-1:checked~.slidesNavigation label#dotForRadio-1,
+    .carrousel #radio-2:checked~.slidesNavigation label#dotForRadio-2,
+    .carrousel #radio-3:checked~.slidesNavigation label#dotForRadio-3,
+    .carrousel #radio-4:checked~.slidesNavigation label#dotForRadio-4 {
+        background: #000000;
+    }
+    @media (max-width: 796px) {
+        .carrousel {
+            height: 8.5em;
+        }
+    }
+    @media (max-width: 480px) {
+        .carrousel li p {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        .carrousel li q {
+            font-size: 1em;
+        }
+        .carrousel li img {
+            width: 2em;
+            margin-left: -1em;
+            margin-right: 0.25em;
+        }
+    }
+    /* newsletter   */
+    #newsletter {
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    #newsletter::after {
+        content: "";
+        background: url(268671-P56008-73.jpg);
+        filter: grayscale(100%);
+        opacity: 0.9;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    #news-container {
+        padding: 40px;
+        width: 93%;
+        height: 95%;
+        display: flex;
+    }
+    .image-half {
+        background-color: rgb(0, 0, 0);
+        min-width: 30%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .image-half img {
+        width: 230%;
+        position: absolute;
+        right: 200;
+        opacity: 0.5;
+    }
+    .content-half {
+        background-color: rgb(0, 0, 0);
+        width: 70%;
+        height: 100%;
+        padding: 40px;
+    }
+    .content-half h2 {
+        color: white;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .content-half p {
+        color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rem {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .content-half h2 {
+        margin-top: 10px;
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+    .content-half p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    #m-l-email {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #submit-btn {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid #fff 2px;
+        background-color: white;
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+    #submit-btn:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    /* FOOTER */
+    footer {
+        background-color: black;
+        height: 210px;
+    }
+    .p1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .p1 ul {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 20px;
+        width: 80%;
+        padding: 20px 0;
+    }
+    .p1 ul li {
+        list-style: none;
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: white;
+    }
+    .p2 {
+        text-align: center;
+        font-size: 10px;
+    }
+    .p3 {
+        text-align: center;
+        color: white;
+    }
+    .p2 a {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .p2 {
+        padding: 20px 0;
+        color: white;
+    }
+    .p {
+        padding: 20px 0;
+    }
+    /* ABOUT */
+    #about p {
+        color: black;
+    }
+    #about-page {
+        min-height: 1100px;
+    }
+    #about {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+        width: 70%;
+        margin: 20px auto;
+        margin-top: 120px;
+        padding-bottom: 60px;
+        margin-bottom: 40px;
+    }
+    #about p {
+        margin: 0 auto;
+        font-size: 18px;
+        width: 90%;
+    }
+    #about h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 60px;
+    }
+    #about h3 {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    #about ul {
+        margin: 0 auto;
+        width: 90%;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    /* CONTACT PAGE */
+    #contact {
+        padding-top: 70px;
+        height: 800px;
+        display: flex;
+        width: 100%;
+    }
+    #map {
+        background-color: rgb(88, 88, 88);
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    #map img {
+        width: 230%;
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: -520px;
+    }
+    #contact-form {
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        height: 100%;
+    }
+    #contact-form h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    #contact-form p {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    #c-f-name,
+    #c-f-email {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #contact-form textarea {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        color: rgb(107, 107, 107);
+        margin-bottom: 15px;
+        font-size: 16px;
+        border: solid 2px rgb(121, 121, 121);
+        height: 200px;
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+    }
+    #c-f-submit {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    #c-f-submit:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    /* LOGIN PAGE */
+    #login-page {
+        height: 800px;
+        display: flex;
+    }
+    #ln-image {
+        padding-top: 80px;
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+    }
+    #ln-image img {
+        width: 120%;
+        position: absolute;
+        top: 5%;
+        left: -50px;
+        opacity: 0.9;
+    }
+    #login-form {
+        padding-top: 80px;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    #login-form h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #wlcm {
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+    #l-f-name,
+    #l-f-password {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #l-f-submit {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    #l-f-submit:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    #login-form p a {
+        text-decoration: underline;
+        color: rgb(112, 112, 112);
+    }
+    #forgot {
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 15px;
+        color: rgb(112, 112, 112);
+        text-decoration: underline;
+    }
+    #s-up {
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 90px;
+        font-weight: 600;
+    }
+    #error {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 40px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        outline: none;
+        background-color: rgb(233, 124, 0);
+        margin-bottom: 12px;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+    #empty {
+        background-color: transparent;
+        height: 60px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* SIGN UP PAGE */
+    #error-div {
+        background-color: rgb(233, 124, 0);
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    #signup {
+        height: auto;
+        padding-top: 70px;
+    }
+    #signup h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+    .inpt {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 60px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 25px;
+    }
+    #f2 {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-bottom: 10px;
+    }
+    #f2 input {
+        margin-bottom: 10px;
+    }
+    input[type="radio"] {
+        margin: 15px 5px 0 5px;
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    #xe {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 13px;
+    }
+    input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: rgb(56, 52, 52);
+        margin-right: 0.5em;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input[type="date"]:focus:before,
+    input[type="date"]:valid:before {
+        content: "";
+    }
+    #signup input {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #signup select {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        height: 60px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #f5 {
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    #f5 input {
+        display: block;
+        width: 48%;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+    }
+    #ww {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    #rw {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .boldy {
+        font-weight: 600;
+    }
+    #date {
+        font-size: 16px;
+        color: grey;
+    }
+    #s-u-signupbtn {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        height: 60px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 20px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 70px;
+    }
+    #s-u-signupbtn:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    .notice {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 5px;
+    }
+    .notice a {
+        color: grey;
+        text-decoration: underline;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+     ::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input[type="submit"][disabled] {
+        color: black;
+    }
+    .error-input {
+        border: solid 3px rgb(195, 0, 0);
+    }
+    .sucess-input {
+        border: solid 3px green;
+    }
+}
+
+@media (max-width: 925px) {
+    /* html, body {margin: 0; height: 100%; overflow: hidden} */
+    /* NAVBAR SECTION  */
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+    #hum {
+        width: 70px;
+        position: fixed;
+        right: 0;
+        top: 20px;
+        cursor: pointer;
+        z-index: 500;
+    }
+    #quit {
+        width: 30px;
+        position: absolute;
+        right: 25px;
+        top: 22px;
+        cursor: pointer;
+        z-index: 520;
+    }
+    #dropdpwn-container {
+        z-index: 500;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+        /* position: absolute; */
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    #dropdpwn-container ul {
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 150px;
+        text-align: center;
+    }
+    #dropdpwn-container ul li {
+        margin: 30px auto;
+        width: 70%;
+        list-style: none;
+        padding: 0;
+        text-align: right;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    #body-overlay {
+        z-index: 490;
+        width: 100%;
+        right: 0;
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    .dropdown-on {
+        width: 70%;
+        transition: width 0.2s ease-in;
+        overflow: hidden;
+    }
+    .dropdown-off {
+        width: 0%;
+        opacity: 0;
+        transition: width 0.2s ease-in, opacity 0.2s ease-in;
+        overflow: hidden;
+    }
+    .on-eff {
+        display: block;
+    }
+    .off-eff {
+        display: none;
+    }
+    #navbar {
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        display: none
+    }
+    #navbar ul a li {
+        color: rgb(255, 255, 255);
+        list-style: none;
+        display: inline;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 22px;
+        font-weight: 600;
+        border: 2px solid transparent;
+        padding: 2px 15px;
+    }
+    #img-cont {
+        width: 20%;
+        padding-left: 20px;
+    }
+    #img-cont img {
+        width: 120px;
+        position: fixed;
+        left: 15px;
+        top: 20px;
+    }
+    #navbar span {
+        display: flex;
+        flex-direction: rows;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20%;
+        margin-right: 20px;
+    }
+    .span1 {
+        color: rgb(255, 255, 255);
+        list-style: none;
+        display: inline;
+        padding: 2px 15px;
+        font-size: 20px;
+        border: 2px solid transparent;
+        font-weight: 600;
+        display: none;
+    }
+    #signup-btn li {
+        padding: 2px 15px;
+        background: white;
+        color: rgb(0, 0, 0);
+        border: solid #fff 2px;
+        transition: background-color 0.5s ease-out;
+        font-size: 20px;
+        display: none;
+    }
+    .span1:hover {
+        border: solid #fff 2px;
+    }
+    #signup-btn li:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    #navbar ul a li:hover {
+        border: solid #fff 2px;
+    }
+    .fixed {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        box-shadow: 0px 1px 9px -2px rgba(0, 0, 0, 0.75);
+    }
+    /* VIDEO BACKGROUND  */
+    .content h1 {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    .content h3 {
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+    .showcase {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        padding: 0 20px;
+    }
+    .video-container {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .video-container video {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+    .video-container:after {
+        content: '';
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+    }
+    .content {
+        z-index: 2;
+    }
+    #home-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        background: white;
+        color: rgb(0, 0, 0);
+        border: solid #fff 1px;
+        margin-top: 25px;
+        transition: background-color 0.5s ease-out;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #home-btn:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    /* FEATURES SECTION  */
+    #features {
+        padding: 30px 10px;
+        padding-right: 20px;
+        text-align: center;
+        /* background:linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(219, 219, 219) 63%,rgb(207, 207, 207) 63%, rgb(175, 175, 175) 75%,rgb(143, 143, 143) 75%, rgb(134, 134, 134) 81%,rgb(136, 136, 136) 81%, rgb(179, 179, 179) 85%,rgb(128, 128, 128) 85%, rgb(184, 184, 184) 90%,rgb(184, 183, 183) 90%, rgb(230, 230, 230) 100%); */
+    }
+    .f-p {
+        font-size: 1px;
+        margin: auto;
+        color: rgb(0, 0, 0);
+    }
+    #features h1 {
+        font-size: 50px;
+    }
+    #three-cards {
+        margin-top: 10px;
+    }
+    .f-cards {
+        margin: 0 30px;
+        margin-bottom: 15px;
+        width: 90%;
+        background-color: rgb(241, 241, 241);
+        padding: 10px;
+    }
+    .f-cards h3 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .f-cards p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: black;
+    }
+    #f-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: solid #fff 1px;
+        margin-top: 50px;
+        transition: background-color 0.5s ease-out;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #f-btn:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: solid rgb(0, 0, 0) 1px;
+    }
+    /* VICTORY STORIES */
+    .anchor {
+        display: block;
+        padding-top: 164px;
+        margin-top: -164px;
+    }
+    #v-stories {
+        background-color: black;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .f-p {
+        font-size: 15px;
+        max-width: 350px;
+        margin: auto;
+        margin-bottom: 50px;
+        color: rgb(255, 255, 255);
+    }
+    .v-str {
+        font-size: 15px;
+        max-width: 350px;
+        margin: auto;
+        margin-bottom: 50px;
+        color: rgb(255, 255, 255);
+    }
+    #v-stories h1 {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+    }
+    /*Carousel*/
+    .carrousel {
+        /* background: #ffffff; */
+        background: linear-gradient(to top, #dfdfdf, #ffffff);
+        text-align: center;
+        padding: 3em 0;
+        height: 380px;
+        max-width: 800px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+        box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+    }
+    .car-h2 {
+        margin: 0;
+        margin-top: -0.9em;
+        padding: 0;
+        font-size: 28px;
+        text-align: center;
+        color: #000000;
+    }
+    .carrousel .slides {
+        width: 400%;
+        left: 0;
+        padding-left: 0;
+        padding-top: 1em;
+        overflow: hidden;
+        list-style: none;
+        position: relative;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+    }
+    .carrousel .slides li {
+        width: 25%;
+        position: relative;
+        float: left;
+    }
+    .carrousel li p {
+        margin-top: 0;
+    }
+    .carrousel li q {
+        display: block;
+        max-width: 90%;
+        margin: auto;
+        color: #666666;
+        font-size: 1.5em;
+        font-weight: 500;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    .carrousel li img {
+        width: 4em;
+        height: 4em;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: -1.5em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+        margin-top: 20px;
+    }
+    .carrousel li span.author {
+        margin-top: 0.5em;
+        font-size: 1.4em;
+        color: #000000;
+        display: block;
+    }
+    .carrousel .slidesNavigation {
+        display: block;
+        list-style: none;
+        text-align: center;
+        bottom: 1em;
+        /*--- Centering trick---*/
+        /* Absolute positioning*/
+        position: absolute;
+        /* Abosulte positioning*/
+        width: 104px;
+        /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+        left: 52%;
+        /*Centering de element*/
+        margin-left: -52px;
+        /*adjusting the centering by applying a negative margin of half of the width*/
+    }
+    .carrousel input {
+        display: none;
+    }
+    .carrousel .slidesNavigation label {
+        float: left;
+        margin: 6px;
+        display: block;
+        height: 10px;
+        width: 10px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: solid 2px #646464;
+        font-size: 0;
+    }
+    /* You have to repeat this with each slide
+  TODO: make it easier with SCSS
+  25% movement 100/slides-num
+  */
+    #radio-1:checked~.slides {
+        transform: translateX(0%);
+    }
+    #radio-2:checked~.slides {
+        transform: translateX(-25%);
+    }
+    #radio-3:checked~.slides {
+        transform: translateX(-50%);
+    }
+    #radio-4:checked~.slides {
+        transform: translateX(-75%);
+    }
+    .carrousel .slidesNavigation label:hover {
+        cursor: pointer;
+    }
+    /* You have to repeat this with each slide/dot */
+    .carrousel #radio-1:checked~.slidesNavigation label#dotForRadio-1,
+    .carrousel #radio-2:checked~.slidesNavigation label#dotForRadio-2,
+    .carrousel #radio-3:checked~.slidesNavigation label#dotForRadio-3,
+    .carrousel #radio-4:checked~.slidesNavigation label#dotForRadio-4 {
+        background: #000000;
+    }
+    @media (max-width: 796px) {
+        .carrousel {
+            height: 430px;
+        }
+    }
+    @media (max-width: 480px) {
+        .carrousel li p {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        .carrousel li q {
+            font-size: 1em;
+        }
+        .carrousel li img {
+            width: 2em;
+            margin-left: -1em;
+            margin-right: 0.25em;
+        }
+    }
+    /* newsletter   */
+    #newsletter {
+        height: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    #newsletter::after {
+        content: "";
+        background: url(268671-P56008-73.jpg);
+        filter: grayscale(100%);
+        opacity: 0.9;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    #news-container {
+        padding: 40px 0;
+        height: 95%;
+        display: flex;
+    }
+    .image-half {
+        background-color: rgb(0, 0, 0);
+        min-width: 30%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: none;
+    }
+    .image-half img {
+        width: 230%;
+        position: absolute;
+        right: 200;
+        opacity: 0.5;
+        display: none;
+    }
+    .content-half {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
+    .content-half h2 {
+        color: white;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content-half p {
+        color: white;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rem {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .content-half h2 {
+        margin-top: 10px;
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .content-half p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    #m-l-email {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 60px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #submit-btn {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        height: 60px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid #fff 2px;
+        background-color: white;
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+    #submit-btn:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    /* FOOTER */
+    footer {
+        background-color: black;
+        height: 360px;
+    }
+    .p1 {
+        width: 100%;
+    }
+    .p1 ul {
+        padding-right: 20px;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .p1 ul li {
+        list-style: none;
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: white;
+        text-align: center;
+    }
+    .p2 {
+        text-align: center;
+        font-size: 10px;
+    }
+    .p3 {
+        text-align: center;
+        color: white;
+    }
+    .p2 a {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .p2 {
+        padding: 20px 0;
+        color: white;
+    }
+    .p {
+        padding: 20px 0;
+    }
+    /* ABOUT */
+    #about p {
+        color: black;
+    }
+    #about-page {
+        min-height: 1100px;
+    }
+    #about {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.21);
+        width: 90%;
+        margin: 20px auto;
+        margin-top: 120px;
+        padding-bottom: 60px;
+        margin-bottom: 40px;
+    }
+    #about p {
+        margin: 0 auto;
+        font-size: 18px;
+        width: 90%;
+    }
+    #about h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 60px;
+    }
+    #about h3 {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    #about ul {
+        margin: 0 auto;
+        width: 90%;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    /* CONTACT PAGE */
+    #contact {
+        padding-top: 70px;
+        height: 800px;
+        display: flex;
+        width: 100%;
+    }
+    #map {
+        display: none;
+        background-color: rgb(88, 88, 88);
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    #map img {
+        width: 230%;
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: -520px;
+    }
+    #contact-form {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100%;
+    }
+    #contact-form h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    #contact-form p {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    #c-f-name,
+    #c-f-email {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #contact-form textarea {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        color: rgb(107, 107, 107);
+        margin-bottom: 15px;
+        font-size: 16px;
+        border: solid 2px rgb(121, 121, 121);
+        height: 200px;
+        outline: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+    }
+    #c-f-submit {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    #c-f-submit:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    /* LOGIN PAGE */
+    #login-page {
+        height: 800px;
+        display: flex;
+    }
+    #ln-image {
+        display: none;
+        padding-top: 80px;
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+    }
+    #ln-image img {
+        width: 120%;
+        position: absolute;
+        top: 5%;
+        left: -50px;
+        opacity: 0.9;
+    }
+    #login-form {
+        padding-top: 80px;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    #login-form h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #wlcm {
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+    #l-f-name,
+    #l-f-password {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #l-f-submit {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 12px;
+        color: white;
+        cursor: pointer;
+    }
+    #l-f-submit:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    #login-form p a {
+        text-decoration: underline;
+        color: rgb(112, 112, 112);
+    }
+    #forgot {
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 15px;
+        color: rgb(112, 112, 112);
+        text-decoration: underline;
+    }
+    #s-up {
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 90px;
+        font-weight: 600;
+    }
+    #error {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 40px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        outline: none;
+        background-color: rgb(233, 124, 0);
+        margin-bottom: 12px;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+    #empty {
+        background-color: transparent;
+        height: 60px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* SIGN UP PAGE */
+    #error-div {
+        background-color: rgb(233, 124, 0);
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    #signup {
+        height: auto;
+        padding-top: 70px;
+    }
+    #signup h1 {
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+    .inpt {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 60px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        font-size: 25px;
+    }
+    #f2 {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-bottom: 10px;
+    }
+    #f2 input {
+        margin-bottom: 10px;
+    }
+    input[type="radio"] {
+        margin: 15px 5px 0 5px;
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    #xe {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 13px;
+    }
+    input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: rgb(56, 52, 52);
+        margin-right: 0.5em;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input[type="date"]:focus:before,
+    input[type="date"]:valid:before {
+        content: "";
+    }
+    #signup input {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #signup select {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 60px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #f5 {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    #f5 input {
+        display: block;
+        width: 48%;
+        line-height: 50px;
+        padding-left: 15px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom: 15px;
+        border: solid 2px rgb(121, 121, 121);
+        outline: none;
+    }
+    #ww {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    #rw {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .boldy {
+        font-weight: 600;
+    }
+    #date {
+        font-size: 16px;
+        color: grey;
+    }
+    #s-u-signupbtn {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 60px;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        outline: none;
+        border: solid rgb(0, 0, 0) 2px;
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.5s ease-out;
+        margin-top: 20px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 70px;
+    }
+    #s-u-signupbtn:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    .notice {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 5px;
+    }
+    .notice a {
+        color: grey;
+        text-decoration: underline;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+     ::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input[type="submit"][disabled] {
+        color: black;
+    }
+    .error-input {
+        border: solid 3px rgb(195, 0, 0);
+    }
+    .sucess-input {
+        border: solid 3px green;
+    }
 }
